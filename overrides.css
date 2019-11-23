@@ -1,0 +1,177 @@
+h2 {
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+}
+
+code {
+  color: #444;
+  background-color: #d5e6ff;
+  border-radius: 5px;
+  font-size: 80%;
+  padding: 0.1rem;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+section.section {
+  color: #fff;
+  background-color: #3333ff;
+}
+
+section li {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+section.who-we-are li {
+  text-align: center;
+}
+
+section li small {
+  color: #666;
+}
+
+section li + li {
+  margin-top: 1rem;
+}
+
+section.toc ol {
+  margin: 1rem auto;
+  width: 90%;
+}
+
+section.toc li {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+}
+
+section.code {
+  padding-top: 2rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 0;
+}
+
+section.code h1 {
+  font-family: "ASM-Regular";
+  padding: 0.5rem 0.5rem 0.3rem;
+  line-height: 1.2rem;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  text-align: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  color: #333;
+  opacity: 0.7
+}
+
+pre code.hljs {
+  font-size: 0.7rem;
+  line-height: 0.8rem;
+}
+
+pre.koa {
+  color: #eee;
+  width: 100%;
+  font-size: 0.7rem;
+  line-height: 0.8rem;
+}
+
+pre.koa .hl {
+  background-color: #9e2121;
+}
+
+pre.koa .comment {
+  color: #666;
+}
+
+section.code-small code.hljs {
+  font-size: 0.6rem;
+  line-height: 0.7rem;
+}
+
+section.code-eagle-eye pre.koa {
+  font-size: 0.4rem;
+  line-height: 0.45rem;
+}
+
+section.quote cite a {
+  color: #AAA;
+}
+
+.comparisson  {
+  margin-top: 2rem;
+}
+
+.comparisson td, .comparisson th {
+  padding: 0.5rem;
+}
+
+.comparisson td {
+  font-size: 0.8rem;
+}
+
+.comparisson th {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.comparisson th {
+  text-align: left;
+}
+
+.comparisson tbody tr * {
+  border-top: 1px solid #666;
+}
+
+.threeway {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 20%;
+}
+
+.threeway > * {
+  opacity: .05;
+  filter: grayscale(.9);
+}
+
+.threeway-1 > :first-child {
+  opacity: unset;
+  filter: unset;
+}
+
+.threeway-2 > :nth-child(2) {
+  opacity: unset;
+  filter: unset;
+}
+
+.threeway-3 > :nth-child(3) {
+  opacity: unset;
+  filter: unset;
+}
+
+.wait {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 50pt;
+}
+
+.wait-big {
+  font-size: 150pt;
+}
+
+.wait-huge {
+  font-size: 300pt;
+}
