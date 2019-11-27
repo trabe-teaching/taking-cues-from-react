@@ -1,6 +1,24 @@
+nav {
+  display: none;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+}
+
+h1 + * {
+  margin-top: 2rem;
+}
+
 h2 {
-  font-size: 1.2rem;
-  line-height: 2.4rem;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
 }
 
 code {
@@ -22,8 +40,8 @@ section.section {
 
 section li {
   text-align: left;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 
 section.who-we-are li {
@@ -45,23 +63,20 @@ section.toc ol {
 
 section.toc li {
   text-align: left;
-  font-size: 1.2rem;
-  line-height: 2.4rem;
 }
 
 section.code {
-  padding-top: 2rem;
+  padding-top: 3rem;
   justify-content: flex-start;
   align-items: flex-start;
   padding-bottom: 0;
 }
 
 section.code h1 {
-  font-family: "ASM-Regular";
-  padding: 0.5rem 0.5rem 0.3rem;
-  line-height: 1.2rem;
-  font-size: 0.8rem;
-  line-height: 1rem;
+  font-family: "ASM-Bold";
+  padding: 0.8rem 78px;
+  line-height: 1.4rem;
+  font-size: 1.2rem;
   text-align: left;
   position: fixed;
   top: 0;
@@ -73,15 +88,15 @@ section.code h1 {
 }
 
 pre code.hljs {
-  font-size: 0.7rem;
-  line-height: 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1rem;
 }
 
 pre.koa {
   color: #eee;
   width: 100%;
-  font-size: 0.7rem;
-  line-height: 0.8rem;
+  font-size: 0.9rem;
+  line-height: 1rem;
 }
 
 pre.koa .hl {
@@ -93,13 +108,13 @@ pre.koa .comment {
 }
 
 section.code-small code.hljs {
-  font-size: 0.6rem;
-  line-height: 0.7rem;
+  font-size: 0.8rem;
+  line-height: 0.9rem;
 }
 
 section.code-eagle-eye pre.koa {
-  font-size: 0.4rem;
-  line-height: 0.45rem;
+  font-size: 0.5rem;
+  line-height: 0.55rem;
 }
 
 section.quote cite a {
@@ -111,15 +126,15 @@ section.quote cite a {
 }
 
 .comparisson td, .comparisson th {
-  padding: 0.5rem;
+  padding: 1rem;
 }
 
 .comparisson td {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
 }
 
 .comparisson th {
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   color: #666;
 }
 
@@ -140,6 +155,7 @@ section.quote cite a {
 }
 
 .threeway > * {
+  flex: 1;
   opacity: .05;
   filter: grayscale(.9);
 }
@@ -174,4 +190,8 @@ section.quote cite a {
 
 .wait-huge {
   font-size: 300pt;
+}
+
+.wait-humongous {
+  font-size: 600pt;
 }
