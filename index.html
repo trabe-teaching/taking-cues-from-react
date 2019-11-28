@@ -944,8 +944,8 @@ const fetchJson = (url) => component("FETCH_JSON", { url });
 const service = () =>
   component("SERVICE", { children: [] })
   .addDSLMethods({
-    use: element => layer =>  {
-      element.props.children.push(layer);
+    use: element => middleware =>  {
+    element.props.children.push(middleware);
     },
     listen: element => port => {
       build(element).listen(port);
