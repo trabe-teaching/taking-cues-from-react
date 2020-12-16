@@ -561,7 +561,7 @@ app.use(async (ctx, next) => {
   await next();
   const t = new Date().getTime() - start;
   console.log("Request end", t , "ms");
-};
+});
 
 // Fetch, filter, return response
 app.use(async ctx => {
@@ -945,7 +945,7 @@ const service = () =>
   component("SERVICE", { children: [] })
   .addDSLMethods({
     use: element => middleware =>  {
-    element.props.children.push(middleware);
+      element.props.children.push(middleware);
     },
     listen: element => port => {
       build(element).listen(port);
@@ -986,7 +986,7 @@ const builders = {
   "SERVICE": (element, build) => {
     const app = new Koa();
     element.props.children
-      .map(children => build(children))
+      .map(child => build(child))
       .forEach(fn => app.use(fn));
     return app;
   },
